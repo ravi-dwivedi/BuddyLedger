@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_my_summary"
+            android:icon="@drawable/ic_photo_library_black_24dp"
+            android:title="@string/nav_my_tansactions" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_settings" />
+
+        <item
+            android:id="@+id/nav_rateUs"
+            android:icon="@drawable/rate_us"
+            android:title="@string/nav_rateUs" />
+
+        <item
+            android:id="@+id/nav_helpAndFeedback"
+            android:icon="@drawable/help_circle"
+            android:title="@string/nav_helpAndFeedback" />
+
+        <item
+            android:id="@+id/nav_how_to_use"
+            android:icon="@drawable/how_to_use"
+            android:title="@string/nav_how_to_use" />
+        <!--
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_log_out" />
+            -->
+    </group>
+
+    <item android:title="@string/nav_other">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/nav_about_us" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="@string/nav_privacy_policy" />
+        </menu>
+    </item>
+
+</menu>

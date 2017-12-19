@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_wallet_transaction"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:animateLayoutChanges="true">
+
+    <RadioGroup
+        android:id="@+id/type_radio_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp">
+
+        <RadioButton
+            android:id="@+id/radio_button_expenditure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onTypeRadioButtonSelected"
+            android:text="@string/expenditure" />
+
+        <RadioButton
+            android:id="@+id/radio_button_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onTypeRadioButtonSelected"
+            android:text="@string/income" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/add_wallet_item_amount_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toStartOf="@id/type_radio_options"
+        android:background="#d67601"
+        android:onClick="startCalCActivity"
+        android:text="@string/enter_amount"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/add_wallet_item_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_radio_options"
+        android:gravity="center"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/add_wallet_item_detail_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:src="@drawable/money_icon" />
+
+        <TextView
+            android:id="@+id/add_wallet_item_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/add_wallet_item_detail_image"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_wallet_item_detail_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/add_wallet_item_detail_name"
+            android:layout_below="@id/add_wallet_item_detail_name"
+            android:layout_toEndOf="@id/add_wallet_item_detail_image"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_wallet_item_details"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp">
+
+        <EditText
+            android:id="@+id/add_wallet_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_details_hint" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/done_button_add_wallet_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="#d67601"
+        android:onClick="onAddWalletItem"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+</RelativeLayout>

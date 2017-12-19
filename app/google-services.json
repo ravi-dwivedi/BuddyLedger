@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "423063777759",
+    "firebase_url": "https://buddy-ledger.firebaseio.com",
+    "project_id": "buddy-ledger",
+    "storage_bucket": "buddy-ledger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423063777759:android:e69a81e7d80f1539",
+        "android_client_info": {
+          "package_name": "com.ravi.android.buddy.ledger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423063777759-q5kgisrelhtu458ccagdr7a4qcljod23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ravi.android.buddy.ledger",
+            "certificate_hash": "538CCE58450945C51D268E0C99615027FC623414"
+          }
+        },
+        {
+          "client_id": "423063777759-sk64b4bbvvmnpeuprro72sc20n9rkcql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2UIkkl_anw56cAmxWgwoGgJr50ZY1ITA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423063777759-sk64b4bbvvmnpeuprro72sc20n9rkcql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

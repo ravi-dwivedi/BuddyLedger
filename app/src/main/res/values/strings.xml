@@ -1,0 +1,276 @@
+<resources>
+    <string name="app_name">Buddy ledger</string>
+    <string name="content_authority">com.ravi.android.buddy.ledger</string>
+
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_my_tansactions">My Summary</string>
+    <string name="nav_rateUs">Rate Us</string>
+    <string name="nav_helpAndFeedback">Help And Feedback</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_how_to_use">How To Use</string>
+    <string name="nav_log_out">Logout</string>
+    <string name="nav_privacy_policy">Privacy Policy</string>
+    <string name="nav_other">Other</string>
+
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+
+    <!-- Home Activity Tabs Title -->
+    <string name="tab_friends_list">Friends</string>
+    <string name="tab_groups_list">Groups</string>
+    <string name="tab_summary">Summary</string>
+
+    <!-- Home Activity Menu Items -->
+    <string name="menu_add_friend">Add a Friend</string>
+    <string name="menu_add_group">Create a Group</string>
+    <string name="menu_add_transaction">Add a transaction</string>
+    <string name="menu_logout">Logout</string>
+
+    <!-- Activity Home -->
+    <string name="activity_home_right_pane_default_message">No User Added</string>
+
+    <!-- Ttutorials Constants -->
+    <string name="tutorial_next">NEXT</string>
+    <string name="tutorial_skip">SKIP</string>
+    <string name="tutorial_start">GOT IT</string>
+    <string name="tutorial_slide_1_title">Hello Food!</string>
+    <string name="tutorial_slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+    <string name="tutorial_slide_2_title">Movie Tickets</string>
+    <string name="tutorial_slide_2_desc">Book movie tickets for your family and friends!</string>
+    <string name="tutorial_slide_3_title">Great Discounts</string>
+    <string name="tutorial_slide_3_desc">Best discounts on every single service we offer!</string>
+    <string name="tutorial_slide_4_title">World Travel</string>
+    <string name="tutorial_slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <!-- Font Constants -->
+    <string name="path_assets_fonts">fonts/</string>
+    <string name="font_roboto_light">Roboto-Light.ttf</string>
+    <string name="font_roboto_bold">Roboto-Bold.ttf</string>
+    <string name="font_roboto_regular">Roboto-Regular.ttf</string>
+
+    <string name="choose_currency">Choose currency</string>
+
+    <!-- Setting  Activity -->
+    <string name="settings">Settings</string>
+    <string name="share_msg_text">Buddy Ledger\nhttps://play.google.com/store/apps/details?id=com.rose.quickwallet\nGet this application and we can easily manage our transactions</string>
+    <string name="dialog_confirm_restore_data">This will replace your current application data. Are you sure you want to continue?</string>
+    <string name="snackbar_restore_complete">Data restored successfully</string>
+    <string name="snackbar_create_backup">Please create a backup first</string>
+    <string name="permission_storage_request_message">The write external storage permission is required to create a copy of the database on sd card</string>
+    <string name="snackbar_request_storage_permission">Please grant write external storage permission</string>
+    <string name="snackbar_backup_complete">Backup Completed</string>
+    <string name="snackbar_failed_backup">Backup Failed</string>
+    <string name="dlg_ok">OK</string>
+    <string name="notifications">Notifications</string>
+    <string name="pref_my_account">Edit account details/Create an account</string>
+    <string name="pref_notifications_summary">Enable/Disable notifications</string>
+    <string name="pref_notification_interval">Set interval between notificatins</string>
+    <string name="pref_notification_persistent">Persistent Notification</string>
+    <string name="pref_notification_persistent_summary">Create a persistent notification for directly adding transactions from anywhere</string>
+    <string name="pref_lock_app">Lock Application</string>
+    <string name="pref_lock_app_summary">If enabled a PIN is required to enter application</string>
+    <string name="pref_change_pin">Change PIN</string>
+    <string name="pref_help">Help and Feedback</string>
+    <string name="pref_help_summary">Send an email to developer</string>
+    <string name="pref_share_summary">Share this application with your friends to easily manage transactions</string>
+    <string name="pref_get_more">Get More</string>
+    <string name="pref_get_more_summary">View developer\'s other work on Google Play</string>
+    <string name="security">Security</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    <string name="share">Share</string>
+    <string name="play_dev_link">https://play.google.com/store/apps/dev?id=6203448337154291323</string>
+
+    <!-- Security  Activity -->
+    <string name="enter_pin">Enter PIN to unlock</string>
+    <string name="enter_new_pin">Enter new PIN</string>
+    <string name="enter_saved_pin">Enter saved PIN</string>
+    <string name="wrong_pin_length">Please enter a PIN of four characters</string>
+    <string name="wrong_pin">Sorry, wrong Pin. Enter again</string>
+    <string name="enter">Enter</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- My Summary Activity -->
+    <string name="my_wallet">My Wallet</string>
+    <string name="funds">Funds in Wallet: \</string>
+    <string name="income_total">Total Income: \</string>
+    <string name="expense_total">Total Expenses: \</string>
+    <string name="lent_header">Lent:  \b</string>
+    <string name="borrowed_header">Borrowed: \</string>
+
+    <!-- My Ledger Operation Activity -->
+    <string name="expenditure">Expenditure</string>
+    <string name="expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="lent">Lent</string>
+    <string name="borrowed">Borrowed</string>
+    <string name="amount_colon">Amount: \</string>
+    <string name="no_balance">No Pending Balance</string>
+    <string name="current_balance_colon">Current Balance: \</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_details_hint">Enter Transaction Details</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="empty_detail_default_text">No details specified</string>
+
+    <!-- Calculator Activity -->
+    <string name="clear">Clear</string>
+    <string name="done">Done</string>
+    <string name="numeric_0">0</string>
+    <string name="numeric_1">1</string>
+    <string name="numeric_2">2</string>
+    <string name="numeric_3">3</string>
+    <string name="numeric_4">4</string>
+    <string name="numeric_5">5</string>
+    <string name="numeric_6">6</string>
+    <string name="numeric_7">7</string>
+    <string name="numeric_8">8</string>
+    <string name="numeric_9">9</string>
+    <string name="numeric_decimal">.</string>
+    <string name="calculator_C">C</string>
+    <string name="calculator_divide">/</string>
+    <string name="calculator_multiply">*</string>
+    <string name="calculator_subtract">-</string>
+    <string name="calculator_add">+</string>
+    <string name="calculator_equal">=</string>
+    <string name="calculator_toast_message_infinity_not_allowed">Calculated Value Infinity Not Allowed Changing Result to 0</string>
+
+    <!-- User Profile -->
+    <string name="user_profile_image_transition">userProfileImageAnimation</string>
+
+    <!-- Friend Opearation Activity -->
+    <string name="request_permissions_contacts">The read contact permission is required to provide you with results from your contacts when adding transactions and to display the contact\'s name and image. No other detail from the contacts are read or used. Please grant the permission when prompted for proper functionality.</string>
+    <string name="buddy_operation_title_add">Add Your Buddy</string>
+    <string name="buddy_operation_title_update">Update Your Buddy</string>
+    <string name="buddy_operation_full_name">Full Name</string>
+    <string name="buddy_operation_email">Email</string>
+    <string name="buddy_operation_contact_number">Contact Number</string>
+    <string name="buddy_operation_male">male</string>
+    <string name="buddy_operation_female">female</string>
+    <string name="buddy_operation_add_user">Add User</string>
+    <string name="buddy_operation_update_user">Update User</string>
+    <string name="buddy_operation_added">Added : </string>
+    <string name="buddy_operation_updated">Updated : </string>
+
+    <!-- Transaction Opearation Activity -->
+    <string name="transaction_operation_add_transaction">Add Transaction</string>
+    <string name="transaction_operation_update_transaction">Update Transaction</string>
+    <string name="transaction_operation_transaction_details">Transaction Details</string>
+    <string name="transaction_operation_transaction_amount">Amount : </string>
+    <string name="transaction_operation_transaction_default_currency">$</string>
+    <string name="transaction_operation_transaction_lent">Lent</string>
+    <string name="transaction_operation_transaction_borrow">Borrow</string>
+    <string name="transaction_operation_added">Transaction Added</string>
+    <string name="transaction_operation_updated">Transaction Updated</string>
+
+    <!-- Group Opearation Activity -->
+    <string name="group_operation_title_add">Add New Group</string>
+    <string name="group_operation_group_name">Group Name</string>
+    <string name="group_operation_group_description">Group Description</string>
+    <string name="group_operation_add">Add Group</string>
+    <string name="group_operation_update">Update Group</string>
+    <string name="group_operation_added">Added : </string>
+    <string name="group_operation_updated">Updated : </string>
+
+    <!-- Group Transaction Opearation Activity -->
+    <string name="group_transaction_operation_add_transaction">Add Transaction</string>
+    <string name="group_transaction_operation_update_transaction">Update Transaction</string>
+    <string name="group_transaction_operation_transaction_details">Transaction Details</string>
+    <string name="group_transaction_operation_transaction_amount">Amount : </string>
+    <string name="group_transaction_operation_transaction_default_currency">$</string>
+    <string name="group_transaction_operation_transaction_operation_in">Transaction Opearation in </string>
+
+    <!-- Group Member Opearation Activity -->
+    <string name="group_member_operation_title_add">Add New Member in </string>
+    <string name="group_member_operation_add">Add Member</string>
+    <string name="group_member_operation_title_remove">Remove Member from </string>
+    <string name="group_member_operation_remove">Remove Member</string>
+    <string name="group_member_operation_deleted">Delted </string>
+    <string name="group_member_operation_added">Added </string>
+    <string name="group_member_operation_no_member_added_yet">No Member Added Yet</string>
+
+    <!-- Notification Service -->
+    <string name="noti_pending_transaction">You have pending transactions</string>
+    <string name="lent_colon">Lent:  \b</string>
+    <string name="borrowed_colon">Borrowed: \</string>
+
+    <!-- Group Info Fragment -->
+    <string name="fragment_group_info_group_image">Group Image</string>
+    <string name="fragment_group_info_group_details">Group Details : </string>
+    <string name="fragment_group_info_group_creation_date">Group Creation Date : </string>
+    <string name="fragment_group_info_number_of_members">Number of members : </string>
+    <string name="fragment_group_info_total_amount">Total Amount : </string>
+    <string name="fragment_group_info_group_category">Group Category : </string>
+    <string name="fragment_group_info_group_description">Description : </string>
+    <string name="fragment_group_info_active_group_members">Active Group Members : </string>
+    <string name="fragment_group_info_group_transactions">Transactions : </string>
+
+    <!-- User Profile Fragment -->
+    <string name="fragment_user_profile_user_image">User Profile Image</string>
+    <string name="fragment_user_profile_lent_amount">Lent Amount</string>
+    <string name="fragment_user_profile_borrow_amount">Borrow Amount</string>
+    <string name="fragment_user_profile_active_groups">Active Groups : </string>
+    <string name="fragment_user_profile_transactions">Transactions : </string>
+    <string name="fragment_user_profile_owes_you"> owes you </string>
+    <string name="fragment_user_profile_you_owes">You owes </string>
+    <string name="fragment_user_profile_your_exchange">Your exchange with </string>
+    <string name="fragment_user_profile_is_balanced"> is Balanced</string>
+
+    <!-- Image Content Desciption -->
+    <string name="user_profile_image">User profile image</string>
+    <string name="summary_header_image">Summary header image</string>
+    <string name="user_profile_currency_image">User profile currency image</string>
+    <string name="nav_header_image">Navigation header image</string>
+    <string name="user_name_image">User name image</string>
+    <string name="tutorial_image_content_description">Tutorial image</string>
+
+    <!-- Custom Bar -->
+    <string name="custom_bar_default_text">50%</string>
+
+    <string name="summary_with_forward_space"> Summary</string>
+
+    <!-- Item Friend List Fragment -->
+    <string name="item_friend_list_framgnet_last_transaction">Last Transaction :</string>
+    <string name="item_friend_list_framgnet_transfer_balanced">Transfer is Balanced</string>
+    <string name="item_friend_list_framgnet_owes">Owes :</string>
+    <string name="item_friend_list_framgnet_you_owes">You Owes :</string>
+    <string name="item_friend_list_framgnet_date">Date : </string>
+    <string name="item_friend_list_framgnet_never_done">Never Done</string>
+
+    <!-- Item Summary List -->
+    <string name="item_summary_list_fragment_last_transaction">Last Transaction : </string>
+
+    <!-- Menu User Profile -->
+    <string name="menu_user_profile_add_transaction">Add Transaction</string>
+    <string name="menu_user_profile_edit_user">Edit User</string>
+    <string name="menu_user_profile_delete_all_transactions">Delete All Transactions</string>
+
+    <!-- Groupt User List Adaptor -->
+    <string name="group_user_list_adaptor_nothing_to_give_or_take">Nothing to give or take</string>
+    <string name="group_user_list_adaptor_nedd_to_give">need to give </string>
+    <string name="group_user_list_adaptor_need_to_take">need to take </string>
+    <string name="group_user_list_adaptor_transfer_is_balanced">Transfer is Balanced</string>
+    <string name="group_user_list_adaptor_owes">Owes :</string>
+    <string name="group_user_list_adaptor_you_owes">You Owes :</string>
+
+    <!-- Exception -->
+    <string name="thread_sleep_exception">Exception while Thread.sleep call</string>
+
+    <!-- Widget All transactions -->
+    <string name="widget_all_transaction_total_lent">Total Lent : </string>
+    <string name="widget_all_transaction_total_borrow">Total Borrow : </string>
+    <string name="widget_all_transaction_monthly_income">Monthly Income : </string>
+    <string name="widget_all_transaction_monthly_expense">Monthly Expense : </string>
+    <string name="widget_all_transaction_total_income">Total Income : </string>
+    <string name="widget_all_transaction_total_expense">Total Expense : </string>
+
+    <!-- AdMob -->
+    <string name="banner_ad_unit_id_home_activity">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

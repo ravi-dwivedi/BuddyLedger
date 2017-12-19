@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>\
+    <color name="primary_light">#B3E5FC</color>
+
+    <!-- Tutorial Colors |||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <!-- Screens background color-->
+    <color name="tutorial_bg_screen1">#f64c73</color>
+    <color name="tutorial_bg_screen2">#20d2bb</color>
+    <color name="tutorial_bg_screen3">#3395ff</color>
+    <color name="tutorial_bg_screen4">#c873f4</color>
+    <!-- Tutorial Dots Color -->
+
+    <!-- dots inactive colors -->
+    <color name="tutorial_dot_dark_screen1">#d1395c</color>
+    <color name="tutorial_dot_dark_screen2">#14a895</color>
+    <color name="tutorial_dot_dark_screen3">#2278d4</color>
+    <color name="tutorial_dot_dark_screen4">#a854d4</color>
+    <!-- dots active colors -->
+    <color name="tutorial_dot_light_screen1">#f98da5</color>
+    <color name="tutorial_dot_light_screen2">#8cf9eb</color>
+    <color name="tutorial_dot_light_screen3">#93c6fd</color>
+    <color name="tutorial_dot_light_screen4">#e4b5fc</color>
+    <array name="tutorial_array_dot_active">
+        <item>@color/tutorial_dot_light_screen1</item>
+        <item>@color/tutorial_dot_light_screen2</item>
+        <item>@color/tutorial_dot_light_screen3</item>
+        <item>@color/tutorial_dot_light_screen4</item>
+    </array>
+    <array name="tutorial_array_dot_inactive">
+        <item>@color/tutorial_dot_dark_screen1</item>
+        <item>@color/tutorial_dot_dark_screen2</item>
+        <item>@color/tutorial_dot_dark_screen3</item>
+        <item>@color/tutorial_dot_dark_screen4</item>
+    </array>
+
+    <color name="group_photo_placeholder">#ffe0e0e0</color>
+    <color name="ltgray">#9e9696</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="white_grey">#ffeeeeee</color>
+
+    <!-- Expandable fab -->
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="black">@android:color/black</color>
+
+    <!-- the activated state color -->
+    <color name="activated">#E0E0E0</color>
+    <color name="primary_text">#212121</color>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/horbar_b1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="#ff0000"
+        android:padding="6dp"
+        android:text="@string/custom_bar_default_text"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/horbar_b2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="#00ff00"
+        android:padding="6dp"
+        android:text="@string/custom_bar_default_text"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</merge>
+

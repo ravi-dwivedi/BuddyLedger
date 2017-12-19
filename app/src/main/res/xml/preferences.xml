@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:title="Currency"
+        android:summary="Select the region to set the currency corresponding to the region"
+        android:key="prefCurrency"
+        android:entries="@array/currency_locales"
+        android:entryValues="@array/locale_value"/>
+    <Preference
+        android:title="Backup"
+        android:key="prefBackup"
+        android:summary="Backup application data so that you can restore later"/>
+    <Preference
+        android:title="Restore"
+        android:key="prefRestore"
+        android:summary="Restore previously backed up data"/>
+    <PreferenceCategory
+        android:title="@string/notifications">
+        <SwitchPreference
+            android:title="@string/notifications"
+            android:summary="@string/pref_notifications_summary"
+            android:defaultValue="true"
+            android:key="notificationSwitch">
+        </SwitchPreference>
+        <ListPreference
+            android:title="@string/pref_notification_interval"
+            android:key="notificationInterval"
+            android:dependency="notificationSwitch"
+            android:entries="@array/notification_intervals"
+            android:entryValues="@array/notification_intervals_values"
+            android:defaultValue="12">
+        </ListPreference>
+        <CheckBoxPreference
+            android:title="@string/pref_notification_persistent"
+            android:summary="@string/pref_notification_persistent_summary"
+            android:defaultValue="false"
+            android:key="notificationPersistent"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/security">
+        <CheckBoxPreference
+            android:title="@string/pref_lock_app"
+            android:summary="@string/pref_lock_app_summary"
+            android:defaultValue="false"
+            android:key="securitySwitch"/>
+        <Preference
+            android:title="@string/pref_change_pin"
+            android:key="securityChangePIN"
+            android:dependency="securitySwitch"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about">
+        <Preference
+            android:title="@string/version"
+            android:summary="8.4"/>
+        <Preference
+            android:title="@string/pref_help"
+            android:summary="@string/pref_help_summary"
+            android:key="aboutEmail">
+        </Preference>
+        <Preference
+            android:title="@string/share"
+            android:summary="@string/pref_share_summary"
+            android:key="shareApp">
+        </Preference>
+        <Preference
+            android:title="@string/pref_get_more"
+            android:summary="@string/pref_get_more_summary">
+            <intent
+                android:data="@string/play_dev_link"
+                android:action="android.intent.action.VIEW" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

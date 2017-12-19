@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/group_operation_from"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:animateLayoutChanges="true"
+    android:background="#5fb0c9"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context="com.ravi.android.buddy.ledger.UserOperationsActivity">
+
+    <TextView
+        android:id="@+id/form_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/group_operation_title_add"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/form_title"
+        android:layout_marginTop="70dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <Spinner
+                android:id="@+id/group_types_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/groupName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:hint="@string/group_operation_group_name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    tools:ignore="UnusedAttribute" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/groupDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:hint="@string/group_operation_group_description"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    tools:ignore="UnusedAttribute" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/addGroupButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#d67601"
+                android:onClick="addGroup"
+                android:text="@string/group_operation_add"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/buddy_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/form_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/customroundcorner"
+        android:contentDescription="@string/user_profile_image"
+        android:elevation="5dp"
+        android:src="@drawable/male_profile_big" />
+</RelativeLayout>

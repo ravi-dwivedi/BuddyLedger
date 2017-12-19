@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/group_transaction_operation_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:animateLayoutChanges="true"
+    android:background="#5fb0c9"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <TextView
+        android:id="@+id/form_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/group_transaction_operation_add_transaction"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/form_title"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/transaction_buddy_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/user_profile_image"
+                    android:src="@drawable/male_profile_big" />
+
+                <com.ravi.android.buddy.ledger.CustomUiElement.SearchableSpinner
+                    android:id="@+id/transaction_buddy_names_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/transaction_input_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:hint="@string/group_transaction_operation_transaction_details"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    tools:ignore="UnusedAttribute" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/transaction_amount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="#FF4081"
+                        android:hint="@string/group_transaction_operation_transaction_amount"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        tools:ignore="UnusedAttribute" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/transaction_currency"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="#FF4081"
+                        android:gravity="end"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:text="@string/group_transaction_operation_transaction_default_currency"
+                        tools:ignore="UnusedAttribute" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#d67601"
+                android:onClick="addTransaction"
+                android:text="@string/group_transaction_operation_add_transaction"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

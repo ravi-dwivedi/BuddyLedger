@@ -1,0 +1,60 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="nav_profile_width">75dp</dimen>
+    <dimen name="nav_profile_height">75dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+
+    <!-- Tutorials Margins -->
+    <dimen name="tutorial_dots_height">30dp</dimen>
+    <dimen name="tutorial_dots_margin_bottom">20dp</dimen>
+    <dimen name="tutorial_img_width_height">120dp</dimen>
+    <dimen name="tutorial_slide_title">30sp</dimen>
+    <dimen name="tutorial_slide_desc">16sp</dimen>
+    <dimen name="tutorial_desc_padding">40dp</dimen>
+
+    <!-- Recycler View Margins -->
+    <dimen name="recycler_view_margin_4">4dp</dimen>
+    <dimen name="recycler_view_margin_8">8dp</dimen>
+    <dimen name="recycler_view_margin_10">10dp</dimen>
+    <dimen name="recycler_view_margin_16">16dp</dimen>
+    <dimen name="recycler_view_margin_48">48dp</dimen>
+    <dimen name="recycler_view_margin_64">64dp</dimen>
+
+    <!-- CustomTextView Dimensions -->
+    <dimen name="custom_text_view_margin_4">4dp</dimen>
+    <dimen name="custom_text_view_margin_8">8dp</dimen>
+    <dimen name="custom_text_view_margin_16">16dp</dimen>
+
+    <!-- Calculator Dimensions -->
+    <dimen name="calc_button_txt_size">24sp</dimen>
+    <dimen name="padding_middle">10dp</dimen>
+
+    <!-- Custom Fab Dimensions -->
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_icon_size">24dp</dimen>
+    <dimen name="fab_plus_icon_size">14dp</dimen>
+    <dimen name="fab_plus_icon_stroke">2dp</dimen>
+    <dimen name="fab_shadow_offset">3dp</dimen>
+    <dimen name="fab_shadow_radius">9dp</dimen>
+    <dimen name="fab_stroke_width">1dp</dimen>
+    <dimen name="fab_actions_spacing">16dp</dimen>
+    <dimen name="fab_labels_margin">8dp</dimen>
+
+    <!-- Small Widget -->
+    <dimen name="all_transaction_summary_default_width">110dp</dimen>
+    <dimen name="all_transaction_summary_default_height">40dp</dimen>
+    <dimen name="all_transaction_summary_min_resize_width">40dp</dimen>
+    <dimen name="all_transaction_summary_resize_height">
+        @dimen/all_transaction_summary_default_height
+    </dimen>
+    <dimen name="all_transaction_summary_large_width">220dp</dimen>
+    <dimen name="all_transaction_summary_min_resize_height">
+        @dimen/all_transaction_summary_default_height
+    </dimen>
+
+
+</resources>

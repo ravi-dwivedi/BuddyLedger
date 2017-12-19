@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_home_activity_titles">
+        <item>Home</item>
+        <item>My Transactions</item>
+        <item>Settings</item>
+        <item>Rate Us</item>
+        <item>Help And Feedback</item>
+        <item>How to use</item>
+    </string-array>
+
+    <!-- Possible Group Types -->
+    <string-array name="group_types">
+        <item>Food</item>
+        <item>House Rent</item>
+        <item>Party</item>
+        <item>Trip</item>
+        <item>Movie</item>
+        <item>House Expenses</item>
+        <item>Class Mates</item>
+        <item>Colleague</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--Possible Currency Types -->
+    <string-array name="currency_locales">
+        <item>¢       \b Cent</item>
+        <item>$       \b Dollar</item>
+        <item>€       \b Euro</item>
+        <item>₣       \b Franc</item>
+        <item>£       \b Pound</item>
+        <item>\u20B1       \b Peso</item>
+        <item>\u20B9       \b Rupee</item>
+        <item>Rs      \b Rupee</item>
+        <item>R       \b Rand</item>
+        <item>RM      \b Ringgit</item>
+        <item>¥       \b Yen</item>
+        <item>₩       \b Won</item>
+    </string-array>
+
+    <string-array name="locale_value">
+        <item>¢</item>
+        <item>$</item>
+        <item>€</item>
+        <item>₣</item>
+        <item>£</item>
+        <item>\u20B1</item>
+        <item>\u20B9</item>
+        <item>Rs</item>
+        <item>R</item>
+        <item>RM</item>
+        <item>¥</item>
+        <item>₩</item>
+    </string-array>
+
+    <!-- Notification Intervals -->
+    <string-array name="notification_intervals">
+        <item>Half-Hour"</item>
+        <item>Hour</item>
+        <item>Three Hours</item>
+        <item>Six Hours</item>
+        <item>Half-Day</item>
+        <item>Day</item>
+    </string-array>
+
+    <string-array name="notification_intervals_values">
+        <item>30</item>
+        <item>60</item>
+        <item>3</item>
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+    </string-array>
+
+    <!-- My Ledger Operation -->
+    <string-array name="transaction_click_dialog_options">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+</resources>

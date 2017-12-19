@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ravi.android.buddy.ledger">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/app_backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TutorailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserOperationsActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".GroupOperationsActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".TransactionOperationsActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".GroupMemberOperationActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".GroupTransactionOperationActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".MyLedgerActivity"
+            android:theme="@style/DarkActionBar" />
+        <activity
+            android:name=".UserLedgerOperationActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="About Us"
+            android:theme="@style/DarkActionBar" />
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:label="Privacy Policy"
+            android:theme="@style/DarkActionBar" />
+        <activity
+            android:name=".StartupSecurityActivity"
+            android:theme="@style/PinActivity" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GroupInfoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name=".data.DatabaseProvider"
+            android:authorities="@string/content_authority"
+            android:exported="true"
+            android:syncable="true"
+            tools:ignore="ExportedContentProvider" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <!-- Summary Widget -->
+        <receiver
+            android:name=".widget.AllTransactionSummaryWidgetProvider"
+            android:enabled="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.example.android.sunshine.app.ACTION_DATA_UPDATED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_all_transactions_summary_provider" />
+        </receiver>
+        <service
+            android:name=".widget.AllTransactionSummaryWidgetIntentService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Detail Widget -->
+        <service
+            android:name=".widget.TransactionSummaryWidgetRemoteViewService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:name=".widget.TransactionSummaryWidgetProvider"
+            android:enabled="true"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_transaction_summary_provider" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.ravi.android.buddy.ledger.widget.updateWidget" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receiver.ServiceStartUpReceiver"
+            android:exported="false" />
+
+        <service
+            android:name=".service.OfflineNotificationService"
+            android:exported="false" />
+    </application>
+</manifest>
